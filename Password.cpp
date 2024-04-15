@@ -23,7 +23,7 @@ int Password::count_leading_characters(string phrase){
 bool Password::has_numbers(string phrase){
   for (int i = 0; i < phrase.length(); i++)
   {
-    if(isdigit(phrase[i]) == "true")
+    if(isdigit(phrase[i]))
       return true;
   }
   return false;
