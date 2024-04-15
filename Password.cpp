@@ -18,3 +18,12 @@ int Password::count_leading_characters(string phrase){
   }
   return repetition;
 }
+
+bool Password::has_numbers(string phrase){
+  for (int i = 0; i < phrase.length(); i++)
+  {
+    if(isdigit(phrase[i]) == "true")
+      return true;
+  }
+  return false;
+}

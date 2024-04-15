@@ -21,5 +21,8 @@ public:
   letter and at least one lower-case letter
   */
   bool has_mixed_case(string);
+
+  //See if the the password contains numbers
+  bool has_numbers(string word);
 };
 #endif
