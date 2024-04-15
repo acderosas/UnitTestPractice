@@ -20,3 +20,10 @@ TEST(PasswordTest, single_letter_password)
 	int actual = my_password.count_leading_characters("Z");
 	ASSERT_EQ(1, actual);
 }
+
+TEST(PasswordTest, has_numbers)
+{
+	Password my_password;
+	int numbers = my_password.has_numbers("password1");
+	ASSERT_EQ(1, numbers);
+}

@@ -23,6 +23,6 @@ public:
   bool has_mixed_case(string);
 
   //See if the the password contains numbers
-  bool has_numbers(string word);
+  int has_numbers(string word);
 };
 #endif
