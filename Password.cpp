@@ -20,7 +20,7 @@ int Password::count_leading_characters(string phrase){
   return repetition;
 }
 
-int Password::has_numbers(string phrase){
+int Password::count_numbers(string phrase){
   int amountNumbers = 0;
   for (int i = 0; i < phrase.length(); i++)
   {
@@ -29,3 +29,23 @@ int Password::has_numbers(string phrase){
   }
   return amountNumbers;
 }
+
+// Implementation A
+bool has_mixed_case(string str)
+{
+  bool has_lower = false;
+  bool has_upper = false;
+  for (char ch : str)
+  {
+    if (std::islower(ch))
+    {
+      has_lower = true;
+    }
+    else if (std::isupper(ch))
+    {
+      has_upper = true;
+    }
+  }
+  return has_lower && has_upper;
+}
+
