@@ -20,10 +20,9 @@ public:
   receives a string and returns whether it has both at least one upper-case
   letter and at least one lower-case letter
   */
-  bool has_mixed_case(string word);
+  bool has_mixed_case(string);
 
   //See if the the password contains numbers
   int has_numbers(string word);
-
 };
 #endif
