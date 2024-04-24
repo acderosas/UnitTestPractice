@@ -20,7 +20,7 @@ int Password::count_leading_characters(string phrase){
   return repetition;
 }
 
-int Password::count_numbers(string phrase){
+int Password::has_numbers(string phrase){
   int amountNumbers = 0;
   for (int i = 0; i < phrase.length(); i++)
   {
